@@ -4,7 +4,6 @@ def binary_to_decimal(bits: list) -> int:
 
 
 def get_most_common_bit(position: int, numbers: list) -> int:
-    """If up == True, in case of frequency == 0.5, return 1, otherwise return 0."""
     bits_on_position = [number[position] for number in numbers]
     one_bit_frequency = sum(bits_on_position) / len(bits_on_position)
     if one_bit_frequency == 0.5:  # if equal, return 1
